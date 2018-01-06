@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <div class="container">
+      <div class="row">
+        <form>
+          <div id="root"></div>
+          <div class="form-group">
+            <label for="question-2">
+              What vocab words would you associate with each part of the neuron?
+            </label>
+            <textarea class="form-control" id="question-2" cols="5" rows="3"></textarea>
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="question-5">
+              Place an "AP" it is a characteristic of an action potential, or a "LP" if it is a characteristic of a local potential.
+            </label>
+            <table>
+              <tr>
+                <td><input type="text" class="form-control" id="question-5" aria-describedby="question-5" placeholder="Answer"></td>
+                <td>Produced by gated channels on the dendrites and soma</td>
+              </tr>
+              <tr>
+                <td><input type="text" class="form-control" id="question-5" aria-describedby="question-5" placeholder="Answer"></td>
+                <td>All or none; either does not occur at all or exhibits the same peak voltage regardless of stimulus strength</td>
+              </tr>
+            </table>
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="question-7">
+              Draw a converging circuit:
+            </label>
+            <textarea class="form-control" id="question-7" cols="5" rows="3"></textarea>
+          </div>
+
+          <hr>
+
+          <div class="form-group">
+            <label for="question-8">
+              What are cones responsible for?
+            </label>
+            <textarea class="form-control" id="question-8" cols="5" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>
