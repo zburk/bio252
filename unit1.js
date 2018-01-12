@@ -3,7 +3,7 @@ $(document).ready(function () {
   setup();
 
   // Question 1 validation
-  $( "#question-1" ).change(function() {
+  $('#question-1').on('change textInput input', function () {
     if ($( "#question-1" )[0].value.toLowerCase() === q1answer) {
       setCorrect('#question-1');
     } else {
@@ -12,7 +12,7 @@ $(document).ready(function () {
   });
 
   // Question 2 validation
-  $( "#question-2" ).change(function() {
+  $('#question-2').on('change textInput input', function () {
     var studentAnswers = $('#question-2')[0].value.toLowerCase().split(',').map(function(item) {
       return item.trim();
     });
@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
 
   // Question 3 validation
-  $( "#question-3" ).change(function() {
+  $('#question-3').on('change textInput input', function () {
     if ($('#question-3')[0].value === q3answer) {
       setCorrect('#question-3');
     } else {
@@ -34,7 +34,7 @@ $(document).ready(function () {
   });
 
   // Question 4 validation
-  $( ".question-4-inputs" ).change(function() {
+  $('.question-4-inputs').on('change textInput input', function () {
     if (
         $('#question-4-na')[0].value === '>' &&
         $('#question-4-k')[0].value === '<' &&
@@ -54,7 +54,7 @@ $(document).ready(function () {
   });
 
   // Question 5 validation
-  $( ".question-5-inputs" ).change(function() {
+  $('.question-5-inputs').on('change textInput input', function () {
     var SOLUTIONS = {
       LP: 'LP',
       AP: 'AP'
@@ -102,9 +102,25 @@ $(document).ready(function () {
     }
   });
 
-  function setup() {
-    console.log('loaded');
+  // Question 6 validation
+  $('#question-6').on('change textInput input', function () {
+    var paragraph = $('#question-6')[0].value.toLowerCase().replace(/\./g,' ');
+    var studentAnswers = paragraph.split(' ').map(function(item) {
+      return item.trim();
+    });
 
+    if (
+      (studentAnswers.includes('photoreceptor') || studentAnswers.includes('photoreceptors')) &&
+      (studentAnswers.includes('color') || studentAnswers.includes('colors')) &&
+      (studentAnswers.includes('bright') || studentAnswers.includes('day') || studentAnswers.includes('daylight'))
+    ) {
+      setCorrect('#question-6');
+    } else {
+      setIncorrect('#question-6');
+    }
+  });
+
+  function setup() {
     // Load up question 1
     var q1rmp = calculateRMP();
     var q1threshold = calculateThreshold();
