@@ -36,12 +36,18 @@ $(document).ready(function () {
       numberRight++;
     }
 
+    if (studentAnswers.includes('threshold')) {
+      numberRight++;
+    }
+
     if (studentAnswers.includes('axon') ||
       studentAnswers.includes('axons')) {
       numberRight++;
     }
 
-    if (numberRight >= 1) {
+    if (numberRight < studentAnswers.length) {
+      setIncorrect('#question-2');
+    } else if (numberRight >= 2) {
       setCorrect('#question-2');
     } else {
       setIncorrect('#question-2');
