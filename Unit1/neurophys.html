@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="neurophys.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="question-1">
+                        Would a neuron with the following stats fire with a stimulus of 10 mV?
+                        <ul>
+                            <li>RMP: <strong id="question-1-rmp"></strong> mV</li>
+                            <li>Threshold: <strong id="question-1-threshold"></strong> mV</li>
+                            <li>Max Potential: <strong id="question-1-max"></strong> mV</li>
+                        </ul>
+                    </label>
+                    <input type="text" class="form-control" id="question-1" aria-describedby="question-1" placeholder="Answer">
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-2">
+                        What vocab words would you associate with the axon hillock?
+                    </label>
+                    <textarea class="form-control" id="question-2" cols="5" rows="3" placeholder="Answers"></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-3">
+                        What is the minimal amount of voltage required to stimulate an action potential?
+                        <ul>
+                            <li>RMP: <strong id="question-3-rmp"></strong> mV</li>
+                            <li>Threshold: <strong id="question-3-threshold"></strong> mV</li>
+                            <li>Max Potential: <strong id="question-3-max"></strong> mV</li>
+                        </ul>
+                    </label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <input type="number" class="form-control" id="question-3" aria-describedby="question-3" placeholder="Answer">
+                        <div class="input-group-append">
+                            <div class="input-group-text">mV</div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-4">
+                        When resting, what are the relative concentrations of:
+                        <p><small>Describe the values using &lt;, &gt;, and &equals;</small></p>
+                    </label>
+                    <table class="table table-hover" id="question-4-table">
+                    </table>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-5">
+                        Place an "AP" it is a characteristic of an action potential, or a "LP" if it is a characteristic of a local potential.
+                    </label>
+                    <table class="table table-hover" id="question-5-table">
+                    </table>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-6">
+                        Examples of bipolar neurons:
+                        <p><small>Separate each example by a comma (,)</small></p>
+                    </label>
+                    <textarea class="form-control" id="question-6" cols="5" rows="3"></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-8">
+                        What are cones responsible for?
+                    </label>
+                    <textarea class="form-control" id="question-8" cols="5" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
