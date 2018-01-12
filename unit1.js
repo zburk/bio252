@@ -17,7 +17,31 @@ $(document).ready(function () {
       return item.trim();
     });
 
-    if (studentAnswers.includes('trigger zone')) {
+    var numberRight = 0;
+
+    if (studentAnswers.includes('trigger zone') || 
+      studentAnswers.includes('trigger zones')) {
+      numberRight++;
+    }
+
+    if (studentAnswers.includes('action potential') ||
+      studentAnswers.includes('action potentials') ||
+      studentAnswers.includes('potential') ||
+      studentAnswers.includes('potentials')) {
+      numberRight++;
+    }
+
+    if (studentAnswers.includes('tight junction') ||
+      studentAnswers.includes('tight junctions')) {
+      numberRight++;
+    }
+
+    if (studentAnswers.includes('axon') ||
+      studentAnswers.includes('axons')) {
+      numberRight++;
+    }
+
+    if (numberRight >= 1) {
       setCorrect('#question-2');
     } else {
       setIncorrect('#question-2');
