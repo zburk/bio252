@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Neurophysiology</title>
+    <title>Unit 1</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="unit1.js"></script>
@@ -10,9 +10,10 @@
     <div class="container">
         <div class="row">
             <form>
+                <h1>Neurophysiology</h1>
                 <div class="form-group">
                     <label for="question-1">
-                        Would a neuron with the following stats fire with a stimulus of 10 mV?
+                        1. Would a neuron with the following stats fire with a stimulus of 10 mV?
                         <ul>
                             <li>RMP: <strong id="question-1-rmp"></strong> mV</li>
                             <li>Threshold: <strong id="question-1-threshold"></strong> mV</li>
@@ -26,7 +27,7 @@
 
                 <div class="form-group">
                     <label for="question-2">
-                        What vocab words would you associate with the axon hillock?
+                        2. What vocab words would you associate with the axon hillock?
                         <p><small>At least 2. Separate terms with a comma (,)</small></p>
                     </label>
                     <textarea class="form-control" id="question-2" cols="5" rows="3" placeholder="Answers"></textarea>
@@ -36,7 +37,7 @@
 
                 <div class="form-group">
                     <label for="question-3">
-                        What is the minimal amount of voltage required to stimulate an action potential?
+                        3. What is the minimal amount of voltage required to stimulate an action potential?
                         <ul>
                             <li>RMP: <strong id="question-3-rmp"></strong> mV</li>
                             <li>Threshold: <strong id="question-3-threshold"></strong> mV</li>
@@ -55,10 +56,10 @@
 
                 <div class="form-group">
                     <label for="question-4">
-                        When resting, what are the relative concentrations of:
+                        4. When resting, what are the relative concentrations of:
                         <p><small>Describe the values using &lt;, &gt;, and &equals;. Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
                     </label>
-                    <table class="table table-hover" id="question-4-table">
+                    <table class="table table-striped" id="question-4-table">
                     </table>
                 </div>
 
@@ -66,23 +67,100 @@
 
                 <div class="form-group">
                     <label for="question-5">
-                        Place an "AP" it is a characteristic of an action potential, or a "LP" if it is a characteristic of a local potential.
+                        5. Place an "AP" it is a characteristic of an action potential, or a "LP" if it is a characteristic of a local potential.
                         <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
                     </label>
-                    <table class="table table-hover" id="question-5-table">
+                    <table class="table table-striped" id="question-5-table">
+                    </table>
+                </div>
+
+                <h1>ANS</h1>
+
+                <div class="form-group">
+                    <label for="question-7">
+                        6. The somatic effectors only target...
+                        <p><small>Can be answered in 1 or 2 words</small></p>
+                    </label>
+                    <input type="text" class="form-control" id="question-7" aria-describedby="question-7" placeholder="Answer">
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-8">
+                        7. What pathway would not be affected if all neurons were to lose their physical postganglionic neuron?
+                        <p><small>There is one specific case that we've studied. (Suggestions on how to better word this question are appreciated)</small></p>
+                    </label>
+                    <input type="text" class="form-control" id="question-8" aria-describedby="question-8" placeholder="Answer">
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-9">
+                        8. Place the appropriate cranial nerve number (1, 2, 3, etc)
+                        <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table table-striped" id="question-9-table">
                     </table>
                 </div>
 
                 <hr>
 
                 <div class="form-group">
+                    <label for="question-10">
+                        9. With respect to the heart, when we add NE, what do we expect to happen?
+                        <p>
+                            <small>Keep your answer as simple as possible and be the heart's primary response to NE</small>
+                        </p>
+                    </label>
+                    <textarea class="form-control" id="question-10" cols="5" rows="3" placeholder="Answer"></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-11">
+                        10. Fill in the table with the appropriate neurotransmitters
+                        <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table" id="question-11-table">
+                        <tr>
+                            <th></th>
+                            <th>Preganglionic</th>
+                            <th>Postganglionic</th>
+                        </tr>
+                        <tr>
+                            <td>Sympathetic</td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs" id="question-11-1" aria-describedby="question-11-1" placeholder="Answer">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs" id="question-11-2" aria-describedby="question-11-2" placeholder="Answer">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Parasympathetic</td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs" id="question-11-3" aria-describedby="question-11-3" placeholder="Answer">
+                            </td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs" id="question-11-4" aria-describedby="question-11-4" placeholder="Answer">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h1>Vision</h1>
+
+                <div class="form-group">
                     <label for="question-6">
-                        What are cones?
+                        11. What are cones?
                         <p>
                             <small>What type of cells are they? What do they detect? Under what circumstances do they function best?</small>
                         </p>
                     </label>
-                    <textarea class="form-control" id="question-6" cols="5" rows="3"></textarea>
+                    <textarea class="form-control" id="question-6" cols="5" rows="3" placeholder="Answer"></textarea>
                 </div>
             </form>
         </div>

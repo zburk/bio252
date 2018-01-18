@@ -142,11 +142,100 @@ $(document).ready(function () {
     if (
       (studentAnswers.includes('photoreceptor') || studentAnswers.includes('photoreceptors')) &&
       (studentAnswers.includes('color') || studentAnswers.includes('colors')) &&
-      (studentAnswers.includes('bright') || studentAnswers.includes('day') || studentAnswers.includes('daylight'))
+      (studentAnswers.includes('bright') || studentAnswers.includes('day') || studentAnswers.includes('daylight')) || studentAnswers.includes('sun') || studentAnswers.includes('sunlight')
     ) {
       setCorrect('#question-6');
     } else {
       setIncorrect('#question-6');
+    }
+  });
+
+  // Question 7 validation
+  $('#question-7').on('change textInput input', function () {
+    var studentAnswer = $('#question-7')[0].value.toLowerCase().split(' ').map(function(item) {
+      return item.trim();
+    });
+
+    if (studentAnswer.includes('muscle') ||
+      studentAnswer.includes('muscles')) {
+      setCorrect('#question-7');
+    } else {
+      setIncorrect('#question-7');
+    }
+  });
+
+  // Question 8 validation
+  $('#question-8').on('change textInput input', function () {
+    if ($('#question-8')[0].value.toLowerCase() === 'adrenal medulla') {
+      setCorrect('#question-8');
+    } else {
+      setIncorrect('#question-8');
+    }
+  });
+
+  // Question 9 validation
+  $('.question-9-inputs').on('change textInput input', function () {
+    if (
+        $('#question-9-3')[0].value === '3' &&
+        $('#question-9-7')[0].value === '7' &&
+        $('#question-9-9')[0].value === '9' &&
+        $('#question-9-10')[0].value === '10'
+      ) {
+      setCorrect('#question-9-3');
+      setCorrect('#question-9-7');
+      setCorrect('#question-9-9');
+      setCorrect('#question-9-10');
+    } else {
+      setIncorrect('#question-9-3');
+      setIncorrect('#question-9-7');
+      setIncorrect('#question-9-9');
+      setIncorrect('#question-9-10');
+    }
+  });
+
+  // Question 10 validation
+  $('#question-10').on('change textInput input', function () {
+    var studentAnswers = $('#question-10')[0].value.toLowerCase().split(' ').map(function(item) {
+      return item.trim();
+    });
+
+    if (
+        (studentAnswers.includes('increase') ||
+        studentAnswers.includes('increases') ||
+        studentAnswers.includes('faster') ||
+        studentAnswers.includes('fast')) &&
+        studentAnswers.includes('rate')
+      ) {
+      setCorrect('#question-10');
+    } else {
+      setIncorrect('#question-10');
+    }
+  });
+
+  // Question 11 validation
+  $('.question-11-inputs').on('change textInput input', function () {
+    var SOLUTIONS = {
+      ACH: 'ach',
+      ACH_FULL: 'acetylcholine',
+      NE: 'ne',
+      NE_FULL: 'norepinephrine',
+    };
+
+    if (
+        ($('#question-11-1')[0].value.toLowerCase() === SOLUTIONS.ACH || $('#question-11-1')[0].value.toLowerCase() === SOLUTIONS.ACH_FULL) &&
+        ($('#question-11-2')[0].value.toLowerCase() === SOLUTIONS.NE || $('#question-11-2')[0].value.toLowerCase() === SOLUTIONS.NE_FULL) &&
+        ($('#question-11-3')[0].value.toLowerCase() === SOLUTIONS.ACH || $('#question-11-3')[0].value.toLowerCase() === SOLUTIONS.ACH_FULL) &&
+        ($('#question-11-4')[0].value.toLowerCase() === SOLUTIONS.ACH || $('#question-11-4')[0].value.toLowerCase() === SOLUTIONS.ACH_FULL)
+      ) {
+      setCorrect('#question-11-1');
+      setCorrect('#question-11-2');
+      setCorrect('#question-11-3');
+      setCorrect('#question-11-4');
+    } else {
+      setIncorrect('#question-11-1');
+      setIncorrect('#question-11-2');
+      setIncorrect('#question-11-3');
+      setIncorrect('#question-11-4');
     }
   });
 
@@ -223,6 +312,21 @@ $(document).ready(function () {
       var item = randomItem(question5);
       $('#question-5-table').append('<tr>' + item + '</tr>');
       question5.splice($.inArray(item, question5), 1);
+    }
+
+    // Load up question 9
+    var question9 = [
+      '<td><input type="text" class="form-control question-9-inputs" id="question-9-3" aria-describedby="question-9-3" placeholder="Answer"></td><td>Oculomotor - eye movement</td>',
+      '<td><input type="text" class="form-control question-9-inputs" id="question-9-7" aria-describedby="question-9-7" placeholder="Answer"></td><td>Facial - facial expression muscles</td>',
+      '<td><input type="text" class="form-control question-9-inputs" id="question-9-9" aria-describedby="question-9-9" placeholder="Answer"></td><td>Glossopharyngeal - mixed nerve. Carries afferent sensory and efferent motor information</td>',
+      '<td><input type="text" class="form-control question-9-inputs" id="question-9-10" aria-describedby="question-9-10" placeholder="Answer"></td><td>Vagus - motor and sensory fibers and, because it passes through the neck and thorax to the abdomen, has the widest distribution in the body</td>'
+    ];
+
+    var numQuestion9 = question9.length;
+    for (var i = 0; i < numQuestion9; i++) {
+      var item = randomItem(question9);
+      $('#question-9-table').append('<tr>' + item + '</tr>');
+      question9.splice($.inArray(item, question9), 1);
     }
   }
 
