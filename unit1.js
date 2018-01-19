@@ -165,7 +165,11 @@ $(document).ready(function () {
 
   // Question 8 validation
   $('#question-8').on('change textInput input', function () {
-    if ($('#question-8')[0].value.toLowerCase() === 'adrenal medulla') {
+    var studentAnswer = $('#question-8')[0].value.toLowerCase().split(' ').map(function(item) {
+      return item.trim();
+    });
+    
+    if (studentAnswer.includes('adrenal') && studentAnswer.includes('medulla')) {
       setCorrect('#question-8');
     } else {
       setIncorrect('#question-8');
