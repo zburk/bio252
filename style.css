@@ -7,7 +7,15 @@ div.form-group {
     margin-bottom: 20px;
 }
 
+.index .lead {
+	font-size: 1em;
+}
+
 .index h1 small {
 	margin-left: 40px;
 	font-size: 60%;
+}
+
+.index .card {
+	margin-top: 80px;
 }
