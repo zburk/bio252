@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112375617-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112375617-1');
+    </script>
+
+    <title>Unit 1 Key</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form>
+                <h1>Neurophysiology</h1>
+                <div class="form-group">
+                    <label for="question-1">
+                        1. Would a neuron with the following stats fire with a stimulus of 10 mV?
+                        <ul>
+                            <li>RMP: <strong id="question-1-rmp">&minus;70</strong> mV</li>
+                            <li>Threshold: <strong id="question-1-threshold">&minus;50</strong> mV</li>
+                            <li>Max Potential: <strong id="question-1-max">30</strong> mV</li>
+                        </ul>
+                    </label>
+                    <input type="text" class="form-control text-success" id="question-1" aria-describedby="question-1" placeholder="Answer" value="No" disabled>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                A neuron fires if the the RMP &plus; stimulus is greater than the threshold. Since &minus;70 &plus; 10 &equals; &minus;60 and &minus;60 is NOT greater than &minus;50, there is no action potential.
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                <strong>RMP</strong> is the resting membrane potential which is the electrochemcial difference when the cell is at equilibrium. <strong>Threshold</strong> is the minimum potential that must reach the axon hillock to trigger an <strong>action potential</strong>. <strong>Max potential</strong> is the most positive mV the cell reaches. Max potential is not needed to determine whether or not a neuron will fire.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-2">
+                        2. What vocab words would you associate with the axon hillock?
+                        <p><small>At least 2. Separate terms with a comma (,)</small></p>
+                    </label>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                Acceptable answers are:
+                                <ul>
+                                    <li>Trigger zone/trigger zones</li>
+                                    <li>Action potential/action potentials</li>
+                                    <li>Tight junction/tight junctions</li>
+                                    <li>Threshold</li>
+                                    <li>Axon/axons</li>
+                                </ul>
+                                In order for your answer to have been marked correct, you needed to have at least 2 correct and 0 wrong.
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                The axon hillock is the part of the cell where membrane potentials from the dendrites are propagated to. If the potential is above the threshold at this point, then an action potential is created.
+                                <figure class="figure">
+                                    <img src="img/neuron-anatomy.png" class="figure-img img-fluid rounded" width="50%">
+                                    <figcaption class="figure-caption">Image from <a href="https://commons.wikimedia.org/wiki/File:Biological_neuron.gif" target="_blank">Wikimedia</a></figcaption>
+                                </figure>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-3">
+                        3. What is the minimal amount of voltage required to stimulate an action potential rounded to the nearest whole number?
+                        <ul>
+                            <li>RMP: <strong id="question-3-rmp">&minus;70</strong> mV</li>
+                            <li>Threshold: <strong id="question-3-threshold">&minus;50</strong> mV</li>
+                            <li>Max Potential: <strong id="question-3-max">&plus;30</strong> mV</li>
+                        </ul>
+                    </label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <input type="number" class="form-control" id="question-3" aria-describedby="question-3" placeholder="Answer" value="20" disabled>
+                        <div class="input-group-append">
+                            <div class="input-group-text">mV</div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                A neuron fires if the the RMP &plus; stimulus is greater than the threshold. In order to cross the threshold of &minus;50, we need a stimulus of 20 (and a little) mV. Since we round to the nearest whole number, the answer is 20 mV.
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                If and only if the membrane potential crosses the threshold will an action potential be generated. Once an action potential is created, an all&minus;or&minus;none response is created.
+                                <figure class="figure">
+                                    <img src="img/potential-graph.png" class="figure-img img-fluid rounded">
+                                    <figcaption class="figure-caption">Image from <a href="https://en.wikipedia.org/wiki/Action_potential" target="_blank">Wikipedia</a></figcaption>
+                                </figure>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-4">
+                        4. When resting, what are the relative concentrations of:
+                        <p><small>Describe the values using &lt;, &gt;, and &equals;. Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table table-striped" id="question-4-table">
+                        <tr>
+                            <td>Na<sup>+</sup></td>
+                            <td>Out of the cell</td>
+                            <td>
+                                <input type="text" class="form-control question-4-inputs text-success" id="question-4-na" aria-describedby="question-4-na" placeholder="Answer" value=">" disabled>
+                            </td>
+                            <td>In the cell</td>
+                        </tr>
+                        <tr>
+                            <td>K<sup>+</sup></td>
+                            <td>Out of the cell</td>
+                            <td>
+                                <input type="text" class="form-control question-4-inputs text-success" id="question-4-k" aria-describedby="question-4-k" placeholder="Answer" value="<" disabled>
+                            </td>
+                            <td>In the cell</td>
+                        </tr>
+                        <tr>
+                            <td>Cl<sup>-</sup></td>
+                            <td>Out of the cell</td>
+                            <td>
+                                <input type="text" class="form-control question-4-inputs text-success" id="question-4-cl" aria-describedby="question-4-cl" placeholder="Answer" value=">" disabled>
+                            </td>
+                            <td>In the cell</td>
+                        </tr>
+                        <tr>
+                            <td>HPO<sup>-</sup></td>
+                            <td>Out of the cell</td>
+                            <td>
+                                <input type="text" class="form-control question-4-inputs text-success" id="question-4-hpo" aria-describedby="question-4-hpo" placeholder="Answer" value="<" disabled>
+                            </td>
+                            <td>In the cell</td>
+                        </tr>
+                    </table>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                When channels are present, then we're able to establish an RMP as ions move in and out passively due to the electrochemical gradient and actively due to the sodium&minus;potassium pump.
+                            </p>
+
+                            <p class="card-text">
+                                <figure class="figure">
+                                    <img src="img/ions.png" class="figure-img img-fluid rounded" width="50%">
+                                    <figcaption class="figure-caption">Image from Dr. Johnson</figcaption>
+                                </figure>
+
+                                For additional practice, what would the relative concentrations be when the cell is depolarized?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-5">
+                        5. Place an "AP" it is a characteristic of an action potential, or a "LP" if it is a characteristic of a local potential.
+                        <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table table-striped" id="question-5-table">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-1" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                Produced by gated channels on the dendrites and soma
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-2" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                All or none; either does not occur at all or exhibits the same peak voltage regardless of stimulus strength
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs  text-success" id="question-5-3" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                Reversible; returns to RMP if stimulation ceases before threshold is reached
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-4" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                Self-propagating; has effects a great distance from point of origin
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-5" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                Decremental; signal grows weaker with distance
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-6" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                Graded; proportional to stimulus strength
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-7" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                Irreversible; goes to completion once it begins
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-8" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                Local; has effects for only a short distance from point of origin
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-9" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                Always begins with depolarization
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-10" aria-describedby="question-5" placeholder="Answer" value="LP" disabled>
+                            </td>
+                            <td>
+                                May be a positive (depolarizing) or negative (hyperpolarizing) voltage change
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-11" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                Produced by voltage-gated channels on the trigger zone and axon
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-5-inputs text-success" id="question-5-12" aria-describedby="question-5" placeholder="Answer" value="AP" disabled>
+                            </td>
+                            <td>
+                                Nondecremental; signal maintains same strength regardless of distance
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                <table class="table">
+                                    <tr>
+                                        <th>Local Potentials</th>
+                                        <th>Action Potentials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                <li>Graded</li>
+                                                <li>Reversible</li>
+                                                <li>Decremental</li>
+                                                <li>Local</li>
+                                                <li>Potential can be depolarizing or hyperpolarizing</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>All or none</li>
+                                                <li>Irreversible</li>
+                                                <li>Nondecremental</li>
+                                                <li>Self-propagating</li>
+                                                <li>Always depolarization</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                Local potentials occur on the dendrites and travel down towards the axon hillock. Local potentials can be positive (<strong>EPSPs</strong>) or negative (<strong>IPSPs</strong>). While traveling, local potentials lose their strength so not every local potential turns into an action potential.
+                                <br><br>
+                                An action potential occurs along the axon and travels towards the axon terminal. As it travels, more sodium and potassium gates open up, which allows it to self-propagate while also limiting the frequency of action potentials (<strong>absolute refractory period</strong>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>ANS</h1>
+
+                <div class="form-group">
+                    <label for="question-7">
+                        6. The somatic effectors only target...
+                        <p><small>Can be answered in 1 or 2 words</small></p>
+                    </label>
+                    <input type="text" class="form-control text-success" id="question-7" aria-describedby="question-7" placeholder="Answer" value="Muscle(s)" disabled>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                Somatic effectors target skeletal muscles. Visceral effectors target glands, smooth muscles, and cardiac muscles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-8">
+                        7. What pathway would not be affected if all neurons were to lose their physical postganglionic neuron?
+                        <p><small>There is one specific case that we've studied. (Suggestions on how to better word this question are appreciated)</small></p>
+                    </label>
+                    <input type="text" class="form-control text-success" id="question-8" aria-describedby="question-8" placeholder="Answer" value="Adrenal medulla" disabled>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                The adrenal medulla's sympathetic pathway still receives input from the preganglionic neuron but instead releases norepinephrine into the blood.
+
+                                <figure class="figure">
+                                    <img src="img/adrenal-medulla.png" class="figure-img img-fluid rounded">
+                                    <figcaption class="figure-caption">Image from Dr. Johnson</figcaption>
+                                </figure>
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                <figure class="figure">
+                                    <img src="img/comparison.png" class="figure-img img-fluid rounded">
+                                    <figcaption class="figure-caption">Image from Dr. Johnson</figcaption>
+                                </figure>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-9">
+                        8. Place the appropriate cranial nerve number (1, 2, 3, etc)
+                        <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table table-striped" id="question-9-table">
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-9-inputs text-success" id="question-9-3" aria-describedby="question-9-3" placeholder="Answer" value="3" disabled>
+                            </td>
+                            <td>
+                                Oculomotor - eye movement
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-9-inputs text-success" id="question-9-7" aria-describedby="question-9-7" placeholder="Answer" value="7" disabled>
+                            </td>
+                            <td>
+                                Facial - facial expression muscles
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-9-inputs text-success" id="question-9-9" aria-describedby="question-9-9" placeholder="Answer" value="9" disabled>
+                            </td>
+                            <td>
+                                Glossopharyngeal - mixed nerve. Carries afferent sensory and efferent motor information
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control question-9-inputs text-success" id="question-9-10" aria-describedby="question-9-10" placeholder="Answer" value="10" disabled>
+                            </td>
+                            <td>
+                                Vagus - motor and sensory fibers and, because it passes through the neck and thorax to the abdomen, has the widest distribution in the body
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                These four cranial nerves belong to the parasympathetic system. If you <em>had</em> to pick one to know and memorize, the vagus nerve would be it. It's important to be able to recognize which cranial nerves are part of the parasympathetic nervous sytem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-10">
+                        9. With respect to the heart, when we add NE, what do we expect to happen?
+                        <p>
+                            <small>Keep your answer as simple as possible and be the heart's primary response to NE</small>
+                        </p>
+                    </label>
+
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                Norepinephrine is the neurotransmitter we normally associate with the sympathetic division of the nervous system. The sympathetic division is responsible for the fight-or-flight response. Under such conditions, we'd want to increase our heart rate to increase oxygen delivery to our tissues to outrun (maybe) a dinosaur.
+
+                                <figure class="figure">
+                                    <img src="img/heart-dual.png" class="figure-img img-fluid rounded">
+                                    <figcaption class="figure-caption">Image from Dr. Johnson</figcaption>
+                                </figure>
+                            </p>
+
+                            <h5 class="card-title">Additional Information</h5>
+                            <p class="card-text">
+                                Acetylcholine is the neurotransmitter we normally associate with the parasympathetic division of the nervous system. The parasympathetic division is responsible for the rest-and-digest response. What might happen to our heart rate if we added ACh?
+                                <br><br>
+                                Norepinephrine and acetylcholine with respect to the heart is an example of <strong>dual innervation</strong> - innervation by both the sympathetic and parasympathetic. What's another example of dual innervation that we've talked about?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group">
+                    <label for="question-11">
+                        10. Fill in the table with the appropriate neurotransmitters
+                        <p><small>Your answers will not be marked as correct unless <strong>all</strong> of them are correct.</small></p>
+                    </label>
+                    <table class="table" id="question-11-table">
+                        <tr>
+                            <th></th>
+                            <th>Preganglionic</th>
+                            <th>Postganglionic</th>
+                        </tr>
+                        <tr>
+                            <td>Sympathetic</td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs text-success" id="question-11-1" aria-describedby="question-11-1" placeholder="Answer" value="ACh" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs text-success" id="question-11-2" aria-describedby="question-11-2" placeholder="Answer" value="NE" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Parasympathetic</td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs text-success" id="question-11-3" aria-describedby="question-11-3" placeholder="Answer" value="ACh" disabled>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control question-11-inputs text-success" id="question-11-4" aria-describedby="question-11-4" placeholder="Answer" value="ACh" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h1>Vision</h1>
+
+                <div class="form-group">
+                    <label for="question-6">
+                        11. What are cones?
+                        <p>
+                            <small>What type of cells are they? What do they detect? Under what circumstances do they function best?</small>
+                        </p>
+                    </label>
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Essentials</h5>
+                            <p class="card-text">
+                                <strong>Cones</strong> are photoreceptor cells that detect color. Cones function under bright light. <strong>Rods</strong> are photoreceptor cells that function under low-light.
+                                <br><br>
+                                I remember that <strong>c</strong>ones detect <strong>c</strong>olor because both start with <strong>C</strong>. I remember that they function under bright light because you see colors best when it is bright. Rods are all the opposite.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -24,10 +24,9 @@ $(document).ready(function () {
       numberRight++;
     }
 
-    if (studentAnswers.includes('action potential') ||
-      studentAnswers.includes('action potentials') ||
-      studentAnswers.includes('potential') ||
-      studentAnswers.includes('potentials')) {
+    if (studentAnswers.includes('action') &&
+      (studentAnswers.includes('potential') || studentAnswers.includes('potentials'))
+      ) {
       numberRight++;
     }
 
